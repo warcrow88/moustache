@@ -1,0 +1,12 @@
+.eyes {
+  height: 100px;
+  width: 100px;
+  color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: 125px;
+  left: 200px;
+  box-shadow:
+      100px 100px 0 0 currentColor, 300px 100px 0 0 currentColor;
+
+}

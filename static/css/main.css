@@ -1,0 +1,108 @@
+@import "eyes.css";  /**at top so is we need to override you can below.  Import all styles from eyes.css**/
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+
+P::first-letter {
+  font-size: 150%;
+  color: steelblue;
+  font-family: cursive;
+}
+p::first-line {
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+p {
+  font-size: 150%;
+}
+#pringles { /*access an ID - single target*/
+  color: red;
+}
+.moustache {
+  width: 180px;
+  height: 180px;
+  color: steelblue;
+  position: absolute; /*top left corner anchor point to position fixed means hard location*/
+  top: 150px;
+  left: 130px;
+  box-shadow: 150px 240px 0px 0px currentColor, 300px 240px 0 0 currentColor; /**x offest, y offset, blur, and spread....currentColor equates to last uswd color**/
+  border-radius: 50%; /**adjusted the two box shadows**/
+}
+.eyes {
+
+}
+.moustache::before {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  content: ""; /**set to empty string...nothing will show up unless you define the content**/
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-60deg);
+  transform-origin: 210px;
+}
+.moustache::after {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 387px;
+  content: ""; /**set to empty string...nothing will show up unless you define the content**/
+  border-bottom: solid 180px currentColor;
+  border-radius: 0 0 100% 0;
+  transform: rotate(60deg);
+  transform-origin: left 235px;
+}
+.mickey-big {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  position: absolute; /*top left corner anchor point to position fixed means hard location*/
+  top: 550px;
+  left: 1160px;
+  border-radius: 50%; /**adjusted the two box shadows**/
+  }
+.mickey {
+  width: 220px;
+  height: 220px;
+  color: black;
+  position: absolute; /*top left corner anchor point to position fixed means hard location*/
+  top: 150px;
+  left: 1000px;
+  box-shadow: 100px 240px 0px 0px black, 400px 240px 0 0 black;  /**x offest, y offset, blur, and spread....currentColor equates to last uswd color**/
+  border-radius: 50%; /**adjusted the two box shadows**/
+}
+.mickey::before {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 85px;
+  left: 5px;
+  content: ""; /**set to empty string...nothing will show up unless you define the content**/
+  /* border-bottom: solid 180px currentColor; */
+  transform-origin: 210px;
+}
+.mickey::after {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  content: ""; /**set to empty string...nothing will show up unless you define the content**/
+  /* border-bottom: solid 180px green; */
+  transform-origin: left 235px;
+}
+.mickey-face {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute; /*top left corner anchor point to position fixed means hard location*/
+  top: 150px;
+  left: 1000px;
+  box-shadow:
+    310px 600px 0 0 grey,
+    220px 500px 0 0 red,
+    400px 500px 0 0 red;  /**x offest, y offset, blur, and spread....currentColor equates to last uswd color**/
+  border-radius: 50%; /**adjusted the two box shadows**/
+}
